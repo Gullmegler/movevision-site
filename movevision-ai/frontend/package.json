@@ -1,0 +1,14 @@
+{
+  "name": "movevision-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Move Vision",
+  "scripts": {
+    "start": "parcel index.html --open"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.0"
+  }
+}
+
+
+

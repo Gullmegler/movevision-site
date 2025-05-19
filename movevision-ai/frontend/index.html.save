@@ -1,0 +1,52 @@
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Detected items</h3>
+          <ul class="space-y-1">
+            <li>📦 Moving boxes (5×) - 40 kg</li>
+            <li>🪑 Dresser - 25 kg</li>
+            <li>👚 Wardrobe - 10 kg</li>
+            <li>🪑 Armchair - 10 kg</li>
+            <li>📚 Bookshelf - 20 kg</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Packing Materials Estimate</h3>
+          <ul class="space-y-1">
+            <li>📦 50 medium moving boxes</li>
+            <li>📦 Wardrobe box</li>
+            <li>📦 Rolls of tape (50 sheets)</li>
+            <li>📦 Moving blankets</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="mt-6 text-gray-600">For a load of this size, a 2 m³ truck would be ideal.</p>
+      <p class="text-sm mt-2 text-gray-500">📥 <a href="#" class="underline">Download list</a> $49/month</p>
+    </section>
+
+    <!-- Benefits for Moving Companies -->
+    <section id="benefits" class="bg-orange-500 text-white px-6 py-16">
+      <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+        <div class="lg:w-1/2 space-y-3">
+          <h2 class="text-3xl font-bold mb-4">Benefits for Moving Companies</h2>
+          <ul class="list-disc list-inside text-white text-lg space-y-2">
+            <li>🎯 Generate more accurate quotes instantly</li>
+            <li>📈 Improve conversion with faster response</li>
+            <li>🧠 Reduce need for physical surveys</li>
+            <li>🕒 Save hours per job with AI automation</li>
+            <li>🔗 Integrate seamlessly with CRM systems</li>
+          </ul>
+        </div>
+        <div class="mt-8 lg:mt-0 lg:w-1/2 text-right">
+          <img src="movevision-agent.png" alt="Agent with computer" class="w-full max-w-md ml-auto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-100 text-center text-sm text-gray-500 py-6">
+      &copy; 2025 Move Vision. All rights reserved. Contact: <a href="mailto:info@movevision.io" class="underline">info@movevision.io</a>
+    </footer>
+    
+  </body>
+</html>
+

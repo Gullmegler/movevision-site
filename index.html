@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Move Vision</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @keyframes float-slow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes float-slower {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
+    .animate-float-slower { animation: float-slower 9s ease-in-out infinite; }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Header -->
+  <header class="bg-orange-500 py-6">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-white">Move Vision</h1>
+      <nav class="space-x-6">
+        <a href="#how" class="text-white font-medium hover:underline">How it Works</a>
+        <a href="#pricing" class="text-white font-medium hover:underline">Pricing</a>
+        <a href="#contact" class="text-white font-medium hover:underline">Contact</a>
+        <a href="#login" class="text-white font-medium hover:underline">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section 1: Hero -->
+  <section class="bg-white py-20 text-center relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none">
+      <img src="/assets/floating-sofa.png" class="absolute w-32 top-16 left-10 animate-float-slow" alt="sofa" />
+      <img src="/assets/floating-lamp.png" class="absolute w-24 bottom-10 right-10 animate-float-slower" alt="lamp" />
+    </div>
+    <div class="relative z-10 max-w-3xl mx-auto">
+      <h2 class="text-4xl font-extrabold mb-4">Revolutionize Your Moving Supplies Planning with AI</h2>
+      <p class="text-lg text-gray-700 mb-6">Smart detection, precise packing lists, and transport planning – all from one image or video.</p>
+    </div>
+  </section>
+
+  <!-- Section 2: Upload and Analysis -->
+  <section class="bg-white py-16 px-4 md:px-12 relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none">
+      <img src="/assets/floating-chair.png" alt="chair" class="absolute w-24 top-10 left-4 animate-float-slow" />
+      <img src="/assets/floating-lamp.png" alt="lamp" class="absolute w-20 bottom-10 right-6 animate-float-slower" />
+    </div>
+    <div class="max-w-5xl mx-auto text-center relative z-10">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900">AI-powered Moving Analysis & Packing Estimate</h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Upload a photo or video of your space and receive 1 instant, comprehensive list of all items detected and an AI-based estimate of required packing materials.</p>
+      <div class="mt-6">
+        <button class="bg-gray-100 text-gray-800 font-medium px-6 py-3 rounded-xl shadow hover:bg-gray-200 transition">Upload a photo or video</button>
+        <p class="text-sm text-gray-500 mt-2">Free users can test 1 time every 3 days</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 text-left">
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">Summary</h3>
+          <ul class="text-gray-700 space-y-1">
+            <li>Items detected: <strong>42</strong></li>
+            <li>Total weight: <strong>820 kg</strong></li>
+            <li>Total volume: <strong>15.2 m<sup>3</sup></strong></li>
+            <li>Estimated value: <strong>$12,300</strong></li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">Detected Items</h3>
+          <ul class="text-gray-700 space-y-1">
+            <li>2x Sofa</li>
+            <li>1x Double Bed</li>
+            <li>1x Dining Table</li>
+            <li>6x Chairs</li>
+            <li>10x Moving Boxes (15 kg)</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">Moving Supplies Estimate</h3>
+          <ul class="text-gray-700 space-y-1">
+            <li>37x Small Boxes</li>
+            <li>22x Medium Boxes</li>
+            <li>10x Large Boxes</li>
+            <li>2x Wardrobe Boxes</li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-10 text-gray-800 text-lg">For a load of <strong>15 m<sup>3</sup></strong> we recommend a truck of size <strong>20 cbm</strong></p>
+      <div class="mt-6 flex flex-col md:flex-row justify-center gap-4">
+        <button class="bg-orange-500 text-white px-6 py-3 rounded-xl hover:bg-orange-600 transition">Download list</button>
+        <button class="border border-orange-500 text-orange-500 px-6 py-3 rounded-xl hover:bg-orange-50 transition">Add to CRM</button>
+      </div>
+      <p class="mt-6 text-gray-800 font-semibold">$49 USD / month</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-orange-500 text-white py-6 mt-12">
+    <div class="max-w-5xl mx-auto text-center">
+      <p>&copy; 2025 Move Vision. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
