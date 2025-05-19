@@ -5,21 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Move Vision</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .hero-image {
+        position: absolute;
+        bottom: -200px; /* Start below the screen */
+        animation: moveUp 6s ease-in-out infinite;
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-image:nth-child(odd) {
+        animation-delay: 0s;
+    }
+
+    .hero-image:nth-child(even) {
+        animation-delay: 3s; /* Delay for the second image */
+    }
+
+    @keyframes moveUp {
+        0% {
+            bottom: -200px;
+            opacity: 0;
+        }
+        50% {
+            bottom: 50%; /* Move to the top */
+            opacity: 1;
+        }
+        100% {
+            bottom: 100%; /* Move off the screen */
+            opacity: 0;
+        }
+    }
+  </style>
 </head>
 <body class="bg-orange-500 text-white font-sans">
-
   <!-- Hero med flytende møbler -->
-  <header class="relative text-center py-32 overflow-hidden">
-    <h1 class="text-4xl md:text-6xl font-bold">AI Survey for Moving</h1>
-    <p class="mt-4 text-lg md:text-xl text-orange-100">Smart detection, precise packing lists, and intelligent truck recommendations</p>
-
-    <!-- Flytende bilder -->
-    <img src="sofa.png" alt="Sofa" class="absolute w-28 sm:w-36 top-10 left-10 animate-bounce-slow" />
-    <img src="box.png" alt="Box" class="absolute w-24 sm:w-28 top-32 right-20 animate-float" />
-    <img src="bed.png" alt="Bed" class="absolute w-32 bottom-10 left-1/4 animate-bounce" />
-    <img src="chair.png" alt="Chair" class="absolute w-20 bottom-10 right-1/4 animate-float" />
-    <img src="washingmachine.png" alt="Washing Machine" class="absolute w-24 top-24 right-1/3 animate-bounce-slow" />
-    <img src="wardrobe.png" alt="Wardrobe" class="absolute w-28 bottom-20 left-1/3 animate-float" />
+  <header class="hero-section">
+    <img class="hero-image" src="sofa.png" alt="Sofa" />
+    <img class="hero-image" src="box.png" alt="Box" />
+    <img class="hero-image" src="bed.png" alt="Bed" />
+    <img class="hero-image" src="chair.png" alt="Chair" />
+    <img class="hero-image" src="wardrobe.png" alt="Wardrobe" />
   </header>
 
   <!-- Seksjon 2: Analyse og knapper -->
@@ -84,19 +119,6 @@
     <p>© 2025 Move Vision – All rights reserved</p>
   </footer>
 
-  <!-- Animations -->
-  <style>
-    .animate-bounce-slow {
-      animation: bounce 5s infinite;
-    }
-    .animate-float {
-      animation: float 6s ease-in-out infinite;
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-  </style>
 </body>
 </html>
 
