@@ -1,0 +1,333 @@
+/* General Resets */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Container */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.header {
+  background-color: #f57c00;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 38px;
+}
+
+.xlarge-logo {
+  height: 48px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-list a {
+  color: white;
+  font-weight: bold;
+}
+
+.nav-list .btn {
+  background-color: #fff;
+  color: #f57c00;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+}
+
+/* Hamburger menu */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger-menu span {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  border-radius: 2px;
+}
+
+.nav-list.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 1rem;
+  top: 4.5rem;
+  background-color: #f57c00;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f57c00;
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+  background-color: black;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Hero Images */
+.hero-images {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.hero-img {
+  position: absolute;
+}
+
+.hero-sofa-large {
+  right: 200px;
+  top: 60px;
+  width: 150px;
+}
+
+.hero-chair-small {
+  right: 160px;
+  top: 190px;
+  width: 60px;
+}
+
+.hero-lamp-top {
+  left: 60px;
+  top: 40px;
+  width: 40px;
+}
+
+.hero-box-tiny {
+  right: 120px;
+  top: 160px;
+  width: 30px;
+}
+
+.hero-box-scatter {
+  right: 100px;
+  top: 210px;
+  width: 35px;
+}
+
+.hero-washer {
+  right: 260px;
+  top: 80px;
+  width: 90px;
+}
+
+/* Estimate Section */
+.estimate {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.estimate h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.actions {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.grid-boxes {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.three-cols {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.no-bullets li {
+  list-style: none;
+}
+
+.center-text {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* Benefits */
+.orange-background {
+  background-color: #f57c00;
+  color: white;
+  padding: 4rem 1rem;
+}
+
+.benefits-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.benefits-text ul {
+  padding-left: 1.2rem;
+}
+
+/* Section 4 CTA + FAQ */
+.cta-faq {
+  padding: 4rem 1rem;
+}
+
+.cta-faq .container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.faq,
+.cta {
+  flex: 1 1 300px;
+}
+
+.cta p {
+  margin-bottom: 1rem;
+}
+
+.cta .btn {
+  margin-top: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 1rem 0;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: white;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-left {
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #f57c00;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-text {
+    padding-bottom: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .footer-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-top: 0.5rem;
+  }
+}
