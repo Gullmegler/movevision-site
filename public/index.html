@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Move Vision</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <img src="logo.png" alt="Move Vision Logo" class="logo" style="height: 45px;" />
+      <nav>
+        <ul class="nav-list" id="navLinks">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" onclick="openPopup()">CRM</a></li>
+          <li><a href="#login" class="btn">Login</a></li>
+        </ul>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <h1 class="white">AI Survey for Moving</h1>
+        <p class="white">
+          Automatically detect items, calculate volume,<br />
+          weight, and supplies in seconds. Best Survey<br />
+          and CRM Software for Moving Companies.
+        </p>
+        <a href="#" class="btn">Test it now for free</a>
+      </div>
+      <div class="hero-images desktop-only">
+        <img src="sofa.png" class="hero-img hero-sofa-large" alt="sofa" />
+        <img src="chair.png" class="hero-img hero-chair-small" alt="chair" />
+        <img src="lamp.png" class="hero-img hero-lamp-top" alt="lamp" />
+        <img src="box.png" class="hero-img hero-box-tiny" alt="box" />
+        <img src="box.png" class="hero-img hero-box-scatter" alt="box2" />
+        <img src="washingmachine.png" class="hero-img hero-washer" style="top: 140px; right: 220px; width: 80px;" alt="washer" />
+      </div>
+    </div>
+  </section>
+
+  <section class="estimate">
+    <div class="container">
+      <h2>AI-powered Moving Analysis and CRM</h2>
+      <img src="move-vision-eye.png" alt="Vision Eye" class="eye-illustration" style="width: 64px; height: auto;" />
+      <div class="actions">
+        <button class="btn">Upload a photo or video</button>
+        <button class="btn">Download</button>
+        <button class="btn" onclick="openPopup()">Add to CRM</button>
+      </div>
+      <div class="grid-boxes three-cols">
+        <div>
+          <h3>Summary</h3>
+          <ul>
+            <li>Items detected: 42</li>
+            <li>Total weight: 820 kg</li>
+            <li>Total volume: 15.2 m³</li>
+            <li>Estimated value: $12,300</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Detected Items</h3>
+          <ul class="no-bullets">
+            <li>🛋️ 2x Sofa</li>
+            <li>🛏️ 1x Double Bed</li>
+            <li>📺 2x TV</li>
+            <li>🪑 6x Chairs</li>
+            <li>📦 10x Mboxes (15 kg each)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Supplies Estimate</h3>
+          <ul class="no-bullets">
+            <li>📦 30x Small Boxes</li>
+            <li>📦 15x Large Boxes</li>
+            <li>🛏️ 10x Moving Blankets</li>
+            <li>🧻 5x Bubble Wrap Rolls</li>
+          </ul>
+        </div>
+      </div>
+      <p class="center-text">For a load of <strong>15 m³</strong> we recommend a truck of size <strong>20 cbm</strong>.</p>
+    </div>
+  </section>
+
+  <section class="orange-background">
+    <div class="container benefits-flex">
+      <div class="benefits-text">
+        <h2 class="white">Benefits for Moving Companies</h2>
+        <ul class="white">
+          <li>Game-changer and unique</li>
+          <li>Receive more leads</li>
+          <li>Accuracy impresses customers</li>
+          <li>Easy to use by agents</li>
+          <li>Integration to CRM</li>
+        </ul>
+      </div>
+      <div class="benefits-image short-agent">
+        <img src="agent-survey.png" alt="Survey Agent" style="max-width: 200px; height: auto;" />
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-faq">
+    <div class="container">
+      <div class="faq">
+        <h2>FAQs</h2>
+        <details>
+          <summary>What is Move Vision?</summary>
+          <p>AI-powered visual survey software for moving companies. Integrated with custom CRM.</p>
+        </details>
+        <details>
+          <summary>How does it work?</summary>
+          <p>Upload a photo or video and get an instant breakdown of items, weight, volume, and supplies.</p>
+        </details>
+        <details>
+          <summary>Is it free?</summary>
+          <p>You can test it once every 3 days for free.</p>
+        </details>
+        <details>
+          <summary>What does it cost?</summary>
+          <p>$49/month. No binding.</p>
+        </details>
+        <details>
+          <summary>Can I integrate it with my CRM?</summary>
+          <p>Yes, either via webhook or by using Move Vision's built-in CRM for moving companies.</p>
+        </details>
+      </div>
+      <div class="cta">
+        <h2>Ready to Get Started?</h2>
+        <p>Let’s connect and boost your moving process with smart AI analysis!</p>
+        <p>Need help integrating your CRM or guidance? A Move Vision team member will follow up shortly.</p>
+        <a href="#contact" class="btn">Take Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-flex">
+      <p class="footer-left">© 2025 Move Vision. All rights reserved.</p>
+      <div class="footer-links footer-right">
+        <a href="#">Privacy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("open");
+    }
+    function openPopup() {
+      alert("Coming soon! Use webhook to own CRM if needed!");
+    }
+  </script>
+</body>
+</html>
