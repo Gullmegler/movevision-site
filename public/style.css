@@ -1,0 +1,294 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background: #f97300;
+  padding: 10px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 48px;
+}
+
+.large-logo {
+  height: 64px;
+}
+
+/* Navigation */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.btn {
+  background: #000;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.white-outline {
+  background: transparent;
+  border: 2px solid white;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  height: 2px;
+  background: white;
+  margin: 4px 0;
+  width: 20px;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background: #f97300;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .nav-list.open {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+}
+
+/* Hero */
+.hero {
+  background: #f97300;
+  color: white;
+  padding: 60px 0;
+  position: relative;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text h1,
+.hero-text p {
+  color: white;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-images {
+  position: relative;
+  width: 50%;
+}
+
+.hero-img {
+  position: absolute;
+}
+
+.hero-sofa-large {
+  bottom: 0;
+  left: 35%;
+  width: 140px;
+  z-index: 2;
+}
+
+.hero-chair-small {
+  bottom: -10px;
+  left: 10%;
+  width: 60px;
+}
+
+.hero-lamp-top {
+  top: 0;
+  left: 0;
+  width: 40px;
+}
+
+.hero-box-tiny {
+  bottom: 10px;
+  right: 10%;
+  width: 45px;
+}
+
+.hero-box-scatter {
+  bottom: -10px;
+  right: 0;
+  width: 35px;
+}
+
+.hero-washer {
+  right: 200px;
+  bottom: 40px;
+}
+
+/* Hide images on mobile */
+@media (max-width: 768px) {
+  .hero-images {
+    display: none;
+  }
+}
+
+/* Estimate Section */
+.estimate {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.estimate .btn {
+  margin: 10px;
+}
+
+.eye-illustration {
+  width: 80px;
+  margin: 20px 0;
+}
+
+.grid-boxes {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.grid-boxes > div {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 250px;
+}
+
+.no-bullets {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Section titles */
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+/* Benefits Section */
+.orange-background {
+  background: #f97300;
+  color: white;
+  padding: 60px 0;
+}
+
+.benefits-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.benefits-text {
+  flex: 1;
+}
+
+.benefits-image {
+  flex: 1;
+  text-align: center;
+}
+
+.benefits-image img {
+  height: 200px;
+}
+
+.short-agent img {
+  height: 180px;
+}
+
+/* CTA + FAQ Section */
+.cta-faq {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.cta-faq .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.faq {
+  flex: 1;
+  min-width: 300px;
+}
+
+.cta {
+  flex: 1;
+  min-width: 300px;
+}
+
+.faq details {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background: #111;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
