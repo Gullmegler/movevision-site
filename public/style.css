@@ -1,0 +1,237 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /* Global styles */\
+body \{\
+  margin: 0;\
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;\
+  background-color: #fff;\
+  color: #000;\
+\}\
+a \{\
+  text-decoration: none;\
+  color: inherit;\
+\}\
+\
+/* Header */\
+.header \{\
+  background-color: #ff6a00;\
+  padding: 1rem 2rem;\
+\}\
+.header-content \{\
+  display: flex;\
+  align-items: center;\
+  justify-content: space-between;\
+  flex-wrap: wrap;\
+\}\
+.logo \{\
+  height: 50px;\
+\}\
+.nav \{\
+  display: flex;\
+  gap: 1.5rem;\
+  flex-wrap: wrap;\
+\}\
+.btn-login \{\
+  background-color: #000;\
+  color: #fff;\
+  padding: 0.4rem 1rem;\
+  border-radius: 999px;\
+\}\
+.menu-toggle \{\
+  display: none;\
+\}\
+\
+/* Hero */\
+.hero \{\
+  background-color: #ff6a00;\
+  padding: 4rem 2rem;\
+\}\
+.hero-content \{\
+  display: flex;\
+  align-items: center;\
+  justify-content: space-between;\
+  max-width: 1200px;\
+  margin: 0 auto;\
+  flex-wrap: wrap;\
+\}\
+.hero-text \{\
+  flex: 1;\
+  min-width: 280px;\
+  color: #fff;\
+\}\
+.hero-text h1 \{\
+  font-size: 2.5rem;\
+  margin-bottom: 1rem;\
+\}\
+.hero-text p \{\
+  font-size: 1rem;\
+  line-height: 1.5;\
+  margin-bottom: 1.5rem;\
+\}\
+.hero-img \{\
+  max-width: 400px;\
+  height: auto;\
+\}\
+\
+/* Estimate */\
+.estimate \{\
+  background-color: #fff;\
+  text-align: center;\
+  padding: 4rem 1rem;\
+\}\
+.estimate h2 \{\
+  font-size: 1.5rem;\
+\}\
+.actions-top label \{\
+  font-weight: bold;\
+\}\
+.actions-top input[type="file"] \{\
+  margin: 0.8rem auto 1rem;\
+\}\
+.actions-top img \{\
+  margin-top: 1rem;\
+\}\
+.grid-boxes \{\
+  display: flex;\
+  justify-content: center;\
+  gap: 2rem;\
+  flex-wrap: wrap;\
+  margin-top: 2rem;\
+\}\
+.box \{\
+  background: #f1f1f1;\
+  padding: 1rem;\
+  border-radius: 8px;\
+  width: 220px;\
+  text-align: left;\
+\}\
+.actions-bottom \{\
+  margin-top: 2rem;\
+  display: flex;\
+  gap: 1rem;\
+  justify-content: center;\
+\}\
+\
+/* Button Style */\
+.btn-primary \{\
+  background-color: #000;\
+  color: #fff;\
+  padding: 0.6rem 1.2rem;\
+  border-radius: 999px;\
+  display: inline-block;\
+\}\
+\
+/* Section with orange background */\
+.orange-bg \{\
+  background-color: #ff6a00;\
+  padding: 4rem 2rem;\
+\}\
+.flex-between \{\
+  display: flex;\
+  justify-content: space-between;\
+  flex-wrap: wrap;\
+  max-width: 1200px;\
+  margin: 0 auto;\
+\}\
+.align-tight \{\
+  align-items: center;\
+\}\
+.tighter \{\
+  gap: 2rem;\
+\}\
+.benefit-text \{\
+  flex: 1;\
+  color: #fff;\
+\}\
+.benefit-text h2 \{\
+  margin-bottom: 1rem;\
+\}\
+.benefit-image img \{\
+  max-width: 350px;\
+  height: auto;\
+\}\
+\
+/* CTA Section (FAQ + Contact) */\
+.cta-section \{\
+  background: #fff;\
+  padding: 4rem 2rem;\
+  max-width: 1200px;\
+  margin: auto;\
+\}\
+.cta-section h2 \{\
+  font-size: 1.5rem;\
+\}\
+.cta-gap \{\
+  margin-top: 1.5rem;\
+\}\
+details summary \{\
+  cursor: pointer;\
+  font-weight: bold;\
+  margin: 1rem 0;\
+\}\
+details p \{\
+  margin: 0.5rem 0 1rem 0;\
+\}\
+\
+/* Footer */\
+.footer \{\
+  background: #111;\
+  color: #fff;\
+  padding: 2rem;\
+\}\
+.footer-flex \{\
+  display: flex;\
+  justify-content: space-between;\
+  flex-wrap: wrap;\
+\}\
+.footer-right a \{\
+  margin-left: 1rem;\
+  color: #fff;\
+\}\
+\
+/* Responsive Design */\
+@media (max-width: 768px) \{\
+  .menu-toggle \{\
+    display: block;\
+    background: none;\
+    border: none;\
+    font-size: 1.5rem;\
+    margin-left: auto;\
+  \}\
+  .nav \{\
+    display: none;\
+    flex-direction: column;\
+    gap: 1rem;\
+    margin-top: 1rem;\
+  \}\
+  .nav.show \{\
+    display: flex;\
+  \}\
+  .logo \{\
+    height: 60px;\
+  \}\
+  .hero-content \{\
+    flex-direction: column;\
+    text-align: center;\
+  \}\
+  .grid-boxes \{\
+    flex-direction: column;\
+    align-items: center;\
+  \}\
+  .flex-between \{\
+    flex-direction: column;\
+    align-items: center;\
+    text-align: center;\
+  \}\
+  .footer-flex \{\
+    flex-direction: column;\
+    align-items: center;\
+    text-align: center;\
+  \}\
+\}\
+}
