@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Move Vision</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <img src="logo.png" alt="Move Vision Logo" class="logo larger-logo" />
+      <nav>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <div class="nav-menu" id="navMenu">
+          <a href="#about">About</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+          <a href="#crm" onclick="alert('CRM Login Coming Soon!')">CRM</a>
+          <a href="login.html" class="login-button">Login</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>AI Survey for Moving</h1>
+        <p>
+          Automatically detect items, calculate volume, weight, and supplies in seconds. Best Survey and CRM Software for Moving Companies.
+        </p>
+        <a href="#estimate" class="cta-button">Test it now for free</a>
+      </div>
+      <div class="hero-image">
+        <img src="moving-company.png" alt="Moving Company" />
+      </div>
+    </div>
+  </section>
+
+  <section class="estimate" id="estimate">
+    <h2 class="estimate-title">AI-powered Moving Analysis and CRM</h2>
+    <p class="estimate-description">Upload a photo or video to receive an instant estimate of your move.</p>
+    <div class="upload-section">
+      <img src="move-vision-eye.png" alt="Upload Visual" class="upload-visual large-eye" />
+      <input type="file" class="upload-button" />
+    </div>
+    <div class="grid-boxes">
+      <div class="box">
+        <h3>Summary</h3>
+        <p>Items: 15<br />Weight: 1200 lbs<br />Volume: 28 cu ft<br />Value: $7,200</p>
+      </div>
+      <div class="box">
+        <h3>Detected Items</h3>
+        <p>2x Sofa<br />1x Chair<br />2x TV<br />1x Washing Machine<br />1x Dining Table</p>
+      </div>
+      <div class="box">
+        <h3>Supplies Estimate</h3>
+        <p>10x Small Boxes<br />6x Large Boxes<br />3x Moving Blankets<br />2x Bubble Wrap</p>
+      </div>
+    </div>
+    <div class="buttons-row">
+      <a href="#" class="black-button">Download</a>
+      <a href="#" class="black-button" onclick="alert('CRM Integration Coming Soon!')">Add to CRM</a>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="benefits-content">
+      <div class="benefits-text">
+        <h2>Benefits for Moving Companies</h2>
+        <ul>
+          <li>Game-changer and unique</li>
+          <li>Receive more leads</li>
+          <li>Accuracy impresses customers</li>
+          <li>Easy to use by agents</li>
+          <li>Integration to CRM</li>
+        </ul>
+        <a href="register.html" class="cta-button">Become Partner</a>
+      </div>
+      <div class="benefits-image">
+        <img src="survey-agent-login.png" alt="Agent" class="small-benefits-img" />
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-cta">
+    <div class="faq-cta-content">
+      <div class="faq">
+        <h2>FAQs</h2>
+        <p><strong>What is Move Vision?</strong><br />An AI-powered moving analysis tool.</p>
+        <p><strong>What does it cost?</strong><br />$49/month with 1 free test every 3 days.</p>
+        <p><strong>Can I integrate it with my CRM?</strong><br />Yes, via webhook or our built-in CRM.</p>
+        <p><strong>How fast is it?</strong><br />Estimates are generated in seconds.</p>
+        <p><strong>What can it detect?</strong><br />Furniture, electronics, and boxed items.</p>
+      </div>
+      <div class="cta align-right">
+        <h3>Need Help Getting Started?</h3>
+        <p>
+          Trenger du hjelp til integrering av CRM eller veiledning?<br />Vi er her for å hjelpe deg, en fra Move Vision Team vil ta kontakt innen kort tid.
+        </p>
+        <a href="#contact" class="black-button">Take contact</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-left">© 2025 Move Vision. All rights reserved.</div>
+      <div class="footer-right">
+        <a href="#">Privacy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navMenu').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
