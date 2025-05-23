@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  height: 60px;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.register-container {
+  display: flex;
+  height: calc(100vh - 120px);
+}
+
+.register-left {
+  flex: 1;
+  background-image: url("survey-agent-login.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.register-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.register-form {
+  width: 80%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.register-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.register-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-form button {
+  background-color: #0a53be;
+  color: #fff;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background-color: #0946a4;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #0a53be;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  background-color: #f4f4f4;
+}
