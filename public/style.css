@@ -1,0 +1,289 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.header {
+  background-color: #ff6a00;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.btn-login {
+  background-color: #000;
+  color: #fff;
+  padding: 0.4rem 0.9rem;
+  border-radius: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #ff6a00;
+  color: white;
+  padding: 3rem 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.hero-text p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.hero-image {
+  flex-shrink: 0;
+}
+
+.hero-img {
+  max-width: 360px;
+  height: auto;
+}
+
+/* Estimate Section */
+.estimate {
+  background-color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.grid-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.grid-boxes .box {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 200px;
+  text-align: left;
+}
+
+.actions-top input[type="file"] {
+  display: block;
+  margin: 1rem auto;
+  background: #000;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.actions-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Benefit Section */
+.orange-bg {
+  background-color: #ff6a00;
+  padding: 3rem 0;
+  color: #fff;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.benefit-text {
+  max-width: 500px;
+}
+
+.benefit-image img {
+  max-width: 280px;
+  height: auto;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+
+.cta-section h3 {
+  margin-bottom: 1rem;
+}
+
+.cta-section details {
+  margin-bottom: 0.8rem;
+}
+
+.cta-section summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.footer-right a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #000;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  text-decoration: none;
+  border-radius: 25px;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: #ff6a00;
+    position: absolute;
+    top: 70px;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-top: 0.5rem;
+  }
+
+  .hero-img {
+    max-width: 280px;
+  }
+
+  .grid-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-between {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .header-content {
+    gap: 1rem;
+  }
+
+  .hero-text h1 {
+    margin-top: 0.5rem;
+  }
+
+  .benefit-image img {
+    max-width: 200px;
+  }
+}
+
