@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Move Vision - AI Survey</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="logo.png" alt="Move Vision Logo" class="logo" />
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#crm">CRM</a></li>
+      </ul>
+      <a href="login.html" class="login-btn">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>AI Survey for Moving</h1>
+      <p>
+        Automatically detect items,<br />
+        calculate volume, weight,<br />
+        and supplies in seconds. Best Survey and CRM Software for Moving Companies.
+      </p>
+      <a href="#section2" class="cta-btn">Test it now for free</a>
+    </div>
+    <div class="hero-img">
+      <img src="moving-company.png" alt="Moving Company" />
+    </div>
+  </section>
+
+  <section class="upload-section" id="section2">
+    <h2>AI-powered Moving Analysis and CRM</h2>
+    <p>Upload a photo or video to receive an instant estimate of your move.</p>
+    <div class="upload-box">
+      <img src="move-vision-eye.png" alt="Upload Eye" class="eye-placeholder" />
+      <input type="file" class="upload-input" />
+      <button class="upload-btn">Upload a photo or video</button>
+    </div>
+    <div class="grid-estimates">
+      <div class="grid-box">
+        <strong>Summary</strong>
+        <p>Waiting for data...</p>
+      </div>
+      <div class="grid-box">
+        <strong>Detected Items</strong>
+        <p>Waiting for data...</p>
+      </div>
+      <div class="grid-box">
+        <strong>Supplies Estimate</strong>
+        <p>Waiting for data...</p>
+      </div>
+    </div>
+    <div class="button-row">
+      <button class="black-btn">Download</button>
+      <button class="black-btn" id="open-crm">Add to CRM</button>
+    </div>
+  </section>
+
+  <div class="crm-popup" id="crm-popup">
+    <h3>New CRM Entry</h3>
+    <form class="crm-form">
+      <div class="form-row">
+        <input type="text" placeholder="First name" required />
+        <input type="text" placeholder="Last name" required />
+      </div>
+      <div class="form-row">
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Phone" required />
+      </div>
+      <div class="form-row">
+        <input type="text" placeholder="Moving from - Address + Zip" required />
+        <input type="text" placeholder="Moving to - Address + Zip" required />
+      </div>
+      <div class="form-row">
+        <input type="date" placeholder="Moving date" required />
+      </div>
+      <div class="form-row">
+        <textarea placeholder="Add a note"></textarea>
+      </div>
+      <div class="buttons">
+        <button type="button">Add More</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <div class="powered-by">
+      Powered by <strong>Cloudflare Turnstile</strong>
+    </div>
+  </div>
+
+  <footer class="footer">
+    &copy; 2025 Move Vision. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("open-crm").addEventListener("click", function () {
+      document.getElementById("crm-popup").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
