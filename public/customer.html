@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Dashboard | Move Vision</title>
+  <link rel="stylesheet" href="customer.css" />
+</head>
+<body>
+  <header>
+    <div class="container header">
+      <img src="logo.png" alt="Move Vision Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#billing">Billing</a></li>
+          <li><a href="#settings">Settings</a></li>
+          <li><a href="#logout">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="profile">
+      <h2>My Profile</h2>
+      <div class="profile-box">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-img" />
+        <div class="profile-info">
+          <p><strong>Name:</strong> John Doe</p>
+          <p><strong>Company:</strong> Fast Move Inc.</p>
+          <p><strong>Email:</strong> john@fastmove.com</p>
+          <p><strong>CRM Type:</strong> Move Vision CRM</p>
+          <a href="#" class="button">Edit Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="history">
+      <h2>Upload History</h2>
+      <table class="history-table">
+        <thead>
+          <tr><th>Date</th><th>File</th><th>Size</th><th>Result</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2025-05-21</td><td>livingroom.jpg</td><td>2.4MB</td><td>15 items detected</td></tr>
+          <tr><td>2025-05-18</td><td>kitchen.mp4</td><td>15MB</td><td>42 items detected</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="billing">
+      <h2>Billing & Invoices</h2>
+      <p>Plan: <strong>AI Survey + Move Vision CRM</strong></p>
+      <p>Status: <strong>Active</strong></p>
+      <ul class="invoices">
+        <li>Invoice #00123 - $49.00 - Paid</li>
+        <li>Invoice #00124 - $49.00 - Paid</li>
+      </ul>
+      <a href="#" class="button">Manage Billing (Stripe)</a>
+    </section>
+
+    <section id="settings">
+      <h2>CRM Integration</h2>
+      <p>You can integrate your own CRM or use Move Vision CRM.</p>
+      <form class="crm-form">
+        <label for="webhook">Webhook URL:</label>
+        <input type="url" id="webhook" name="webhook" placeholder="https://yourcrm.com/webhook" />
+        <button type="submit" class="button">Save Integration</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <p>&copy; 2025 Move Vision. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
