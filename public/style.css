@@ -1,0 +1,287 @@
+/* Reset og grunnleggende styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Toppmeny */
+.header {
+  background-color: #ff7a00;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.login-btn {
+  background-color: #000;
+  color: #fff !important;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Hero seksjon */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #ff7a00;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 50%;
+  color: #fff;
+}
+
+.hero-img img {
+  max-width: 400px;
+  height: auto;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+/* Upload seksjon */
+.upload-section {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.upload-box {
+  margin: 2rem 0;
+}
+
+.eye-placeholder {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.upload-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Grid bokser */
+.grid-estimates {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.grid-box {
+  background: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  min-width: 220px;
+  text-align: left;
+}
+
+.vehicle-text {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.button-row {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.black-btn {
+  background: #000;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Seksjon 3 - Fordeler */
+.benefits-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff7a00;
+  color: #fff;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+}
+
+.benefits-text {
+  max-width: 50%;
+}
+
+.benefits-img img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Seksjon 4 - FAQ og kontakt */
+.faq-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.faq-section h2 {
+  color: #000;
+}
+
+.faq-section details {
+  margin-bottom: 1rem;
+}
+
+.cta-contact {
+  max-width: 40%;
+  text-align: left;
+}
+
+.cta-contact h2 {
+  margin-bottom: 0.5rem;
+}
+
+.cta-contact p {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* CRM Popup */
+.crm-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.crm-modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.crm-modal-content input,
+.crm-modal-content textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Mobilstil */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-img {
+    max-width: 100%;
+  }
+
+  .grid-estimates {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits-section,
+  .faq-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-contact {
+    max-width: 100%;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .faq-section details p {
+    text-align: left;
+  }
+}
