@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Move Vision</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <img src="logo.png" alt="Move Vision Logo" class="logo" />
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#crm-popup" onclick="openCRM()">CRM</a></li>
+        <li><a href="login.html" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>AI Survey for Moving</h1>
+      <p>Automatically detect items, calculate volume, weight,<br />
+         and supplies in seconds. Best survey and CRM software<br />
+         for moving companies.</p>
+      <a href="#upload" class="cta-btn">Test it now for free</a>
+    </div>
+    <div class="hero-img">
+      <img src="moving-company.png" alt="AI Survey Hero Image" />
+    </div>
+  </section>
+
+  <!-- Upload Section -->
+  <section id="upload" class="upload-section">
+    <h2>AI-powered Moving Analysis and CRM</h2>
+    <img src="move-vision-eye.png" alt="Eye" class="eye-placeholder" />
+    <button class="upload-btn" onclick="document.getElementById('fileUpload').click()">Upload a photo or video</button>
+    <input type="file" id="fileUpload" style="display:none;" />
+    
+    <div class="grid-estimates">
+      <div class="grid-box">
+        <h3>Summary</h3>
+        <p>Weight: 620 lbs<br>Volume: 28 cu ft<br>Value: $2900</p>
+      </div>
+      <div class="grid-box">
+        <h3>Detected Items</h3>
+        <p>2x Chairs<br>1x Dining Table<br>2x TVs</p>
+      </div>
+      <div class="grid-box">
+        <h3>Supplies Estimate</h3>
+        <p>10x Boxes<br>3x Moving Blankets<br>2x Bubble Wrap</p>
+      </div>
+    </div>
+
+    <div class="vehicle-text">
+      Vehicle recommendation: 35 ft truck
+    </div>
+
+    <div class="button-row">
+      <button class="black-btn">Download PDF</button>
+      <button class="black-btn" onclick="openCRM()">Add to CRM</button>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits-section">
+    <div class="benefits-text">
+      <h2>Benefits for Moving Companies</h2>
+      <ul>
+        <li>Game-changer and unique</li>
+        <li>Receive more leads</li>
+        <li>Accuracy impresses customers</li>
+        <li>Easy to use by agents</li>
+        <li>Integration to CRM</li>
+      </ul>
+      <a href="register.html" class="black-btn">Become a Partner</a>
+    </div>
+    <div class="benefits-img">
+      <img src="agent-survey.png" alt="Survey Agent" />
+    </div>
+  </section>
+
+  <!-- FAQ & CTA Section -->
+  <section class="faq-section">
+    <div class="faq">
+      <h2>FAQs</h2>
+      <details><summary>What is Move Vision?</summary><p>Smart AI survey tool integrated with CRM.</p></details>
+      <details><summary>What does it cost?</summary><p>$49/month. Test free once every 3 days.</p></details>
+      <details><summary>Can I integrate it with my CRM?</summary><p>Yes, via webhook or our built-in CRM.</p></details>
+      <details><summary>Can my agents use this on-site?</summary><p>Yes, designed for quick mobile use.</p></details>
+      <details><summary>Is it available worldwide?</summary><p>Yes, with support for multiple languages.</p></details>
+    </div>
+    <div class="cta-contact">
+      <h2>Need help getting started?</h2>
+      <p>We’re here to help. A Move Vision team member will reach out shortly.</p>
+      <a href="/contact" class="black-btn">Contact us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Move Vision</p>
+    <div>
+      <a href="#">Privacy</a>
+      <a href="#">Terms and Conditions</a>
+    </div>
+  </footer>
+
+  <!-- CRM Popup -->
+  <div id="crm-popup" style="display:none;">
+    <!-- CRM form content will go here -->
+  </div>
+
+  <script>
+    function openCRM() {
+      alert("CRM Popup will appear here or redirect to /customer.html.");
+    }
+  </script>
+
+</body>
+</html>
