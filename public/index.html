@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Move Vision - AI Survey for Moving</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="logo.png" alt="Move Vision Logo" class="logo" />
+    <ul class="nav-links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">CRM</a></li>
+      <li><a href="#" class="login-btn">Login</a></li>
+    </ul>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>AI Survey for Moving</h1>
+      <p>
+        Automatically detect items,<br>
+        calculate volume, weight,<br>
+        and supplies in seconds. Best Survey and CRM Software for Moving Companies.
+      </p>
+      <a href="#" class="cta-btn">Test it now for free</a>
+    </div>
+    <div class="hero-img">
+      <img src="moving-company.png" alt="Mover with boxes" />
+    </div>
+  </section>
+
+  <section class="upload-section">
+    <h2>AI-powered Moving Analysis and CRM</h2>
+    <p>Upload a photo or video to receive an instant estimate of your move.</p>
+    <div class="upload-box">
+      <label for="upload-input">
+        <img src="move-vision-eye.png" alt="Eye placeholder" class="eye-placeholder" />
+      </label>
+      <input type="file" id="upload-input" style="display: none" />
+      <button class="upload-btn" onclick="document.getElementById('upload-input').click()">Upload a photo or video</button>
+    </div>
+    <div class="grid-estimates">
+      <div class="grid-box">
+        <strong>Summary</strong>
+        <p>Items: 15<br />Weight: 1200 lbs<br />Volume: 28 cu ft<br />Value: $7,200<br />Recommended vehicle: 20 ft Van</p>
+      </div>
+      <div class="grid-box">
+        <strong>Detected Items</strong>
+        <p>2x Sofa<br />1x Chair<br />2x TV<br />1x Washing Machine<br />1x Dining Table</p>
+      </div>
+      <div class="grid-box">
+        <strong>Supplies Estimate</strong>
+        <p>10x Small Boxes<br />5x Large Boxes<br />2x Bubble Wrap<br />3x Moving Blankets</p>
+      </div>
+    </div>
+    <div class="button-row">
+      <button class="black-btn">Download</button>
+      <button class="black-btn" onclick="openCRM()">Add to CRM</button>
+    </div>
+  </section>
+
+  <section class="benefits-section">
+    <div class="benefits-text">
+      <h2>Benefits for Moving Companies</h2>
+      <ul>
+        <li>Game-changer and unique</li>
+        <li>Receive more leads</li>
+        <li>Accuracy impresses customers</li>
+        <li>Easy to use by agents</li>
+        <li>Integration to CRM</li>
+      </ul>
+      <a href="/register.html" class="cta-btn">Become Partner</a>
+    </div>
+    <div class="benefits-img">
+      <img src="agent-survey.png" alt="Agent with headset" />
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="faq">
+      <h2>FAQs</h2>
+      <details>
+        <summary>What is Move Vision?</summary>
+        <p>AI-powered survey tool with CRM integration.</p>
+      </details>
+      <details>
+        <summary>What does it cost?</summary>
+        <p>$49/month for AI Survey. CRM optional add-on.</p>
+      </details>
+      <details>
+        <summary>Can I integrate it with my CRM?</summary>
+        <p>Yes, using a webhook or using our own CRM dashboard.</p>
+      </details>
+      <details>
+        <summary>How fast is it?</summary>
+        <p>Analysis takes less than 60 seconds.</p>
+      </details>
+      <details>
+        <summary>What can it detect?</summary>
+        <p>Common furniture, electronics, appliances, and more.</p>
+      </details>
+    </div>
+    <div class="cta-contact">
+      <h3>Need Help Getting Started?</h3>
+      <p>We are here to help you. Our Move Vision team will contact you shortly.</p>
+      <a href="/contact" class="cta-btn">Contact Us</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Move Vision. All rights reserved.</p>
+    <div>
+      <a href="#">Privacy</a>
+      <a href="#">Terms & Conditions</a>
+    </div>
+  </footer>
+
+  <div class="crm-modal" id="crmModal">
+    <div class="crm-form">
+      <button class="close-btn" onclick="closeCRM()">&times;</button>
+      <h2>New CRM Entry</h2>
+      <div class="form-row">
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+      </div>
+      <div class="form-row">
+        <input type="email" placeholder="Email" />
+        <input type="tel" placeholder="Phone" />
+      </div>
+      <div class="form-row">
+        <input type="text" placeholder="Moving from" />
+        <input type="text" placeholder="Moving to" />
+      </div>
+      <div class="form-row">
+        <input type="date" placeholder="Moving date" />
+      </div>
+      <textarea placeholder="Note"></textarea>
+      <div class="buttons">
+        <button class="black-btn">Add More</button>
+        <button class="black-btn">Submit</button>
+      </div>
+      <div class="cloudflare">
+        <p>Powered by <img src="cloudflare-turnstile.png" alt="Cloudflare Logo" height="20" /></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openCRM() {
+      document.getElementById('crmModal').classList.add('active');
+    }
+    function closeCRM() {
+      document.getElementById('crmModal').classList.remove('active');
+    }
+    document.getElementById('crmModal').addEventListener('click', function (e) {
+      if (e.target.id === 'crmModal') {
+        closeCRM();
+      }
+    });
+  </script>
+</body>
+</html>
