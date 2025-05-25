@@ -1,0 +1,317 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background: #fff;
+  color: #000;
+}
+
+/* Header */
+.header {
+  background: #fa6400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-btn {
+  background: #000;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fa6400;
+  padding: 60px 40px;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 50%;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background: #000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.hero-img img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+/* Upload Section */
+.upload-section {
+  background: #fff;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.upload-section h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.upload-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.upload-box {
+  margin-bottom: 20px;
+}
+
+.eye-placeholder {
+  width: 150px;
+}
+
+.upload-btn {
+  background: #000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 10px;
+  border: none;
+}
+
+.grid-estimates {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.grid-box {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: left;
+}
+
+.vehicle-text {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.black-btn {
+  background: #000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+}
+
+/* Benefits Section */
+.benefits-section {
+  background: #fa6400;
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.benefits-text {
+  max-width: 50%;
+}
+
+.benefits-text h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.benefits-text ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.benefits-img img {
+  max-width: 300px;
+  width: 100%;
+}
+
+/* FAQ Section */
+.faq-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 40px;
+  background: #fff;
+  gap: 40px;
+}
+
+.faq-section h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.faq-section details {
+  margin-bottom: 10px;
+}
+
+.cta-contact p {
+  margin-bottom: 15px;
+}
+
+.cta-contact .black-btn {
+  text-decoration: none;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+/* Modal Popup */
+.crm-modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.crm-modal-content {
+  background-color: #fff;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.crm-modal-content input,
+.crm-modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.crm-modal-content .modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.crm-modal-content button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.crm-modal-content .close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text, .hero-img {
+    max-width: 100%;
+  }
+
+  .grid-estimates {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .benefits-text, .benefits-img {
+    max-width: 100%;
+  }
+
+  .faq-section {
+    flex-direction: column;
+  }
+}
